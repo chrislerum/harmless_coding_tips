@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title
+      |Resume
+    =stylesheet_link_tag 'application', media: 'all'
+    =javascript_include_tag 'application'
+    =csrf_meta_tags
+  body
+    nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
+      .container-fluid
+        .navbar-header
+          = link_to 'The Title', root_path, {class: 'navbar-brand'}
+          button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        .collapse.navbar-collapse id="bs-example-navbar-collapse-1"
+          ul.nav.navbar-nav.navbar-right
+            -if !current_user
+              li.active
+                = link_to 'Sign Up', new_user_registration_path
+              -if signed_in?
+                li.active
+                  = link_to 'Sign In', new_user_session_path
+              -else
+                li
+                  = link_to 'Sign In', new_user_session_path
+            -else
+              li.active
+                = link_to 'Sign Out', destroy_user_session_path, method: :delete
+          p.navbar-text.navbar-right#user-info
+            -if user_signed_in?
+              =>current_user.email
+    .container
+      p.notice=notice
+      p.alert=alert
+      =yield
+    footer.footer
+    .container
+      p.notice=notice
+      p.alert=alert
+      =yield
+    footer.footer
+      .container
+        p.text-muted Copyright 2015 Chris Lerum
