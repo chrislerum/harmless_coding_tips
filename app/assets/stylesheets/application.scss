@@ -1,5 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$content-color: 'blue';
+
 html {
   position: relative;
   min-height: 100%;
@@ -34,4 +37,21 @@ body > .container {
 }
 .post-title {
   padding: 10px;
+  font-size: 20px;
+  color: red;
+}
+.post-content {
+  padding: 10px;
+  color: $content-color !important;
+}
+.about-me {
+  height: 200px;
+  background-color: #efefef;
+}
+.about-me .title {
+  background-color: white;
+  color: red;
+}
+.subheading {
+  color: #44ff44;
 }

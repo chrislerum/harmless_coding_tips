@@ -6,11 +6,16 @@ html
     =stylesheet_link_tag 'application', media: 'all'
     =javascript_include_tag 'application'
     =csrf_meta_tags
+    =render 'chimp_code'
   body
     nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
       .container-fluid
         .navbar-header
           = link_to 'Chris Lerum\'s Harmless Coding Tips', root_path, {class: 'navbar-brand'}
+          br
+          br
+          br
+          .subheading Bite-Sized Tips and Resources for Learning Ruby on Rails
           button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
             span.sr-only Toggle navigation
             span.icon-bar
@@ -27,7 +32,25 @@ html
     .container
       p.notice=notice
       p.alert=alert
-      =yield
+      .row
+        .col-md-3.about-me
+          .row
+            .col-md-12.title
+              |About Me
+          .row
+            .col-md-12
+              |Ruby on Rails Dev
+        .col-md-8
+          =yield
+          br
+          br
+          br
+          br
+          =render 'mailchimp'
+          br
+          br
+          =render 'disqus'
+        .col-md-1
     footer.footer
       .container
         p.text-muted Copyright 2015 Chris Lerum
