@@ -19,6 +19,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
 ruby '2.2.0'
+gem 'friendly_id'
 gem 'slim-rails'
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
@@ -37,4 +38,8 @@ group :development do
   gem 'guard-rails'
   gem 'guard-rspec'
   gem "spring-commands-rspec"
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-chruby'
+  gem 'capistrano-passenger'
 end

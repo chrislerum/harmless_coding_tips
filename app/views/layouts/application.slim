@@ -36,12 +36,18 @@ html
         .col-md-3.about-me
           .row
             .col-md-12
-              div(style = 'color: red; padding-top: 10px;') About Me
+              = image_tag 'cl.png'
+              br
               br
               ' Chris Lerum is a long-time Ruby on Rails Dev. He also dabbles in iOS using
               =link_to 'RubyMotion', 'http://www.rubymotion.com'
               |.
-        .col-md-8
+              br
+              br
+              = link_to '@chrislerum', 'https://twitter.com/chrislerum'
+              br
+              = link_to 'github.com/chrislerum', 'https://github.com/chrislerum'
+        .col-md-9
           =yield
           br
           br
@@ -51,7 +57,6 @@ html
           br
           br
           =render 'disqus'
-        .col-md-1
     footer.footer
       .container
         p.text-muted Copyright 2015 Chris Lerum
