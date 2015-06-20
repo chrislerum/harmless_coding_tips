@@ -35,11 +35,12 @@ html
       .row
         .col-md-3.about-me
           .row
-            .col-md-12.title
-              |About Me
-          .row
             .col-md-12
-              |Ruby on Rails Dev
+              div(style = 'color: red; padding-top: 10px;') About Me
+              br
+              ' Chris Lerum is a long-time Ruby on Rails Dev. He also dabbles in iOS using
+              =link_to 'RubyMotion', 'http://www.rubymotion.com'
+              |.
         .col-md-8
           =yield
           br

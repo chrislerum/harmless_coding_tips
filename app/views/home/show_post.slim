@@ -1,4 +1,6 @@
 .post-title
   = @post.title
+.post-date
+  = @post.created_at.strftime("%B %d, %Y")
 .post-content
   = @post.content.html_safe
