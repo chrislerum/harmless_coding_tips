@@ -33,6 +33,9 @@ group :test do
   gem 'selenium-webdriver'
   gem 'launchy'
 end
+group :production do
+  gem "therubyracer"
+end
 group :development do
   gem 'guard-rails'
   gem 'guard-rspec'
