@@ -4,6 +4,6 @@ class HomeController < ApplicationController
   end
 
   def show_post
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 end

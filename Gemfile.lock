@@ -177,7 +177,6 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
-    pg (0.18.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -332,6 +331,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.1)
   byebug
   capistrano
+  capistrano-bundler
   capistrano-chruby
   capistrano-passenger
   capistrano-rails
@@ -347,7 +347,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
-  pg
   quiet_assets
   rails (= 4.2.1)
   rails_admin

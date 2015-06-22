@@ -25,7 +25,6 @@ gem 'bootstrap-sass', '~> 3.3.1'
 gem 'autoprefixer-rails'
 gem 'awesome_print'
 gem 'devise'
-gem 'pg'
 gem 'rails_admin'
 group :test do
   gem 'shoulda-matchers', require: false
@@ -39,6 +38,7 @@ group :development do
   gem 'guard-rspec'
   gem "spring-commands-rspec"
   gem 'capistrano'
+  gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-chruby'
   gem 'capistrano-passenger'
