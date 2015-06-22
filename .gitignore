@@ -15,7 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
-/config/database/yml
 .DS_Store
 .capistrano
 config/database.yml
