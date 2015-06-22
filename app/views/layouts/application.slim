@@ -12,10 +12,6 @@ html
       .container-fluid
         .navbar-header
           = link_to 'Chris Lerum\'s Harmless Coding Tips', root_path, {class: 'navbar-brand'}
-          br
-          br
-          br
-          .subheading Bite-Sized Tips and Resources for Learning Ruby on Rails
           button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
             span.sr-only Toggle navigation
             span.icon-bar
@@ -30,6 +26,7 @@ html
             -if user_signed_in?
               =>current_user.email
     .container
+      .subheading Bite-Sized Tips and Resources for Learning Ruby on Rails
       p.notice=notice
       p.alert=alert
       .row
