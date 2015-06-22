@@ -6,7 +6,7 @@ html
     =stylesheet_link_tag 'application', media: 'all'
     =javascript_include_tag 'application'
     =csrf_meta_tags
-    =render 'chimp_code'
+    =render 'home/chimp_code'
   body
     nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
       .container-fluid
@@ -53,10 +53,10 @@ html
           br
           br
           br
-          =render 'mailchimp'
+          =render 'home/mailchimp'
           br
           br
-          =render 'disqus'
+          =render 'home/disqus'
     footer.footer
       .container
         p.text-muted Copyright 2015 Chris Lerum
