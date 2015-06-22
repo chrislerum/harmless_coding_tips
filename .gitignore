@@ -18,3 +18,4 @@
 /config/database/yml
 .DS_Store
 .capistrano
+config/database.yml
