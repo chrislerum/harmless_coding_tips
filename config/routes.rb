@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   get 'show_post/:id' => 'home#show_post', as: :show_post
+  get 'unpublished' => 'home#unpublished', as: :unpublished
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
